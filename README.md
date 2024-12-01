@@ -1,9 +1,9 @@
 <p align="center">
     <img src="https://raw.githubusercontent.com/Neeedrose/MultiStrap/refs/heads/main/multistrap.ico" align="center" width="30%">
 </p>
-<p align="center"><h1 align="center">MULTISTRAP</h1></p>
+<p align="center"><h1 align="center">MultiStrap</h1></p>
 <p align="center">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em><code>❯ MultiStrap</code></em>
 </p>
 <p align="center">
 	<!-- local repository, no metadata badges. --></p>
@@ -34,13 +34,23 @@
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+<code>❯ This script creates a GUI application using tkinter to automate the launch of multiple ROBLOX accounts. It uses Selenium to log in and save cookies, which are then used to authenticate and launch the accounts. The application allows the user to specify a Place ID, Game/Job ID, and the number of accounts to launch. It supports background threading for launching accounts with a delay between each, and can stop active ROBLOX processes. The script also handles Windows-specific message loops for continuous operation and includes error handling for common issues.</code>
 
 ---
 
 ##  Features
 
-<code>❯ REPLACE-ME</code>
+<code>❯ Multi-account support
+    Cookie management (.ROBLOSECURITY)
+    Automated game launch
+    Manual login with Selenium
+    Customizable Place ID, Game/Job ID, and account count
+    10-second delay between account launches
+    Stop all active ROBLOX processes
+    Windows message loop for background operation
+    Threaded execution for parallel tasks
+    Error handling for inputs and login issues
+    Cross-platform ROBLOX launch via Bloxstrap</code>
 
 ---
 
@@ -63,11 +73,11 @@
 			<table>
 			<tr>
 				<td><b><a href='MultiStrap/blob/master/MultiStrap.py'>MultiStrap.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ The main python script.</code></td>
 			</tr>
 			<tr>
 				<td><b><a href='MultiStrap/blob/master/requirements.txt'>requirements.txt</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
+				<td><code>❯ The icon.</code></td>
 			</tr>
 			</table>
 		</blockquote>
@@ -79,7 +89,7 @@
 
 ###  Prerequisites
 
-Before getting started with MultiStrap, ensure your runtime environment meets the following requirements:
+If you are going to run it as a .py file, ensure your runtime environment meets the following requirements:
 
 - **Programming Language:** Python
 - **Package Manager:** Pip
@@ -110,6 +120,9 @@ Install MultiStrap using one of the following methods:
 ❯ pip install -r requirements.txt
 ```
 
+**Run EXE:**
+
+1. Go to the releases tab and click the latest version. From there you will find the exe to download and run.
 
 
 
