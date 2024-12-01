@@ -36,38 +36,6 @@
 <code>❯ This script creates a GUI application using tkinter to automate the launch of multiple ROBLOX accounts. It uses Selenium to log in and save cookies, which are then used to authenticate and launch the accounts. The application allows the user to specify a Place ID, Game/Job ID, and the number of accounts to launch. It supports background threading for launching accounts with a delay between each, and can stop active ROBLOX processes. The script also handles Windows-specific message loops for continuous operation and includes error handling for common issues.</code>
 
 ---
-
-##  Project Structure
-
-```sh
-└── MultiStrap/
-    ├── multistrap.ico
-    ├── MultiStrap.py
-    └── requirements.txt
-```
-
-
-###  Project Index
-<details open>
-	<summary><b><code>MULTISTRAP/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='MultiStrap/blob/master/MultiStrap.py'>MultiStrap.py</a></b></td>
-				<td><code>❯ The main python script.</code></td>
-			</tr>
-			<tr>
-				<td><b><a href='MultiStrap/blob/master/requirements.txt'>requirements.txt</a></b></td>
-				<td><code>❯ The icon.</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
-
----
 ##  Getting Started
 
 ###  Prerequisites
