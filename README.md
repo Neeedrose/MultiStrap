@@ -79,21 +79,11 @@ Install MultiStrap using one of the following methods:
 
 ###  Usage
 Run MultiStrap using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
+**Using `python`** &nbsp; [<img src="https://img.shields.io/badge/Python-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python">](https://www.python.org/)
 
 ```sh
 ❯ python {entrypoint}
 ```
-
-
-###  Testing
-Run the test suite using the following command:
-**Using `pip`** &nbsp; [<img align="center" src="https://img.shields.io/badge/Pip-3776AB.svg?style={badge_style}&logo=pypi&logoColor=white" />](https://pypi.org/project/pip/)
-
-```sh
-❯ pytest
-```
-
 
 ---
 ##  Project Roadmap
