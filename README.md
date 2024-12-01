@@ -17,7 +17,6 @@
 ##  Table of Contents
 
 - [ Overview](#-overview)
-- [ Features](#-features)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
 - [ Getting Started](#-getting-started)
@@ -35,22 +34,6 @@
 ##  Overview
 
 <code>❯ This script creates a GUI application using tkinter to automate the launch of multiple ROBLOX accounts. It uses Selenium to log in and save cookies, which are then used to authenticate and launch the accounts. The application allows the user to specify a Place ID, Game/Job ID, and the number of accounts to launch. It supports background threading for launching accounts with a delay between each, and can stop active ROBLOX processes. The script also handles Windows-specific message loops for continuous operation and includes error handling for common issues.</code>
-
----
-
-##  Features
-
-<code>❯ Multi-account support
-    Cookie management (.ROBLOSECURITY)
-    Automated game launch
-    Manual login with Selenium
-    Customizable Place ID, Game/Job ID, and account count
-    10-second delay between account launches
-    Stop all active ROBLOX processes
-    Windows message loop for background operation
-    Threaded execution for parallel tasks
-    Error handling for inputs and login issues
-    Cross-platform ROBLOX launch via Bloxstrap</code>
 
 ---
 
