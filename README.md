@@ -131,9 +131,11 @@ Run MultiStrap using the following command:
 <summary>Contributor Graph</summary>
 <br>
 <p align="left">
-   <a href="https://github.com{/Neeedrose/MultiStrap/}graphs/contributors">
-      <img src="https://contrib.rocks/image?repo=/MultiStrap">
-   </a>
+    <a href="https://github.com/neeedrose/multistrap/graphs/contributors">
+  	<img src="https://contrib.rocks/image?repo=neeedrose/multistrap" />
+    </a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 </p>
 </details>
 
