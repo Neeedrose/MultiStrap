@@ -17,13 +17,13 @@
 ##  Table of Contents
 
 - [ Overview](#-overview)
+- [ Notes](#-overview)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
 - [ Getting Started](#-getting-started)
   - [ Prerequisites](#-prerequisites)
   - [ Installation](#-installation)
   - [ Usage](#-usage)
-  - [ Testing](#-testing)
 - [ Project Roadmap](#-project-roadmap)
 - [ Contributing](#-contributing)
 - [ License](#-license)
@@ -36,15 +36,17 @@
 ❯ This script creates a GUI application using tkinter to automate the launch of multiple ROBLOX accounts. It uses Selenium to log in and save cookies, which are then used to authenticate and launch the accounts. The application allows the user to specify a Place ID, Game/Job ID, and the number of accounts to launch. It supports background threading for launching accounts with a delay between each, and can stop active ROBLOX processes. The script also handles Windows-specific message loops for continuous operation and includes error handling for common issues.
 
 ---
+
+##  Notes
+
+❯ With a lot of Roblox clients your computer may lag, you can add Fast Flags to BloxStrap that can make it perform better.
+
+---
 ##  Getting Started
 
 ###  Prerequisites
 
-If you are going to run it as a .py file, ensure your runtime environment meets the following requirements:
-
-- **Programming Language:** Python
-- **Package Manager:** Pip
-
+[**BloxStrap**](https://github.com/bloxstraplabs/bloxstrap) - Uses BloxStrap because it made everything more simple to launch.
 
 ###  Installation
 
@@ -88,17 +90,17 @@ Run MultiStrap using the following command:
 ---
 ##  Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- [X] **`Task 1`**: <strike>Add a GUI.</strike>
+- [ ] **`Task 2`**: Add joining users.
+- [ ] **`Task 3`**: Add joining private servers.
 
 ---
 
 ##  Contributing
 
-- **💬 [Join the Discussions](https://LOCAL//MultiStrap/discussions)**: Share your insights, provide feedback, or ask questions.
-- **🐛 [Report Issues](https://LOCAL//MultiStrap/issues)**: Submit bugs found or log feature requests for the `MultiStrap` project.
-- **💡 [Submit Pull Requests](https://LOCAL//MultiStrap/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **💬 [Join the Discussions](https://github.com/Neeedrose/MultiStrap/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/Neeedrose/MultiStrap/issues)**: Submit bugs found or log feature requests for the `MultiStrap` project.
+- **💡 [Submit Pull Requests](https://github.com/Neeedrose/MultiStrap/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 
 <details closed>
 <summary>Contributing Guidelines</summary>
@@ -129,7 +131,7 @@ Run MultiStrap using the following command:
 <summary>Contributor Graph</summary>
 <br>
 <p align="left">
-   <a href="https://LOCAL{//MultiStrap/}graphs/contributors">
+   <a href="https://github.com{/Neeedrose/MultiStrap/}graphs/contributors">
       <img src="https://contrib.rocks/image?repo=/MultiStrap">
    </a>
 </p>
@@ -139,12 +141,13 @@ Run MultiStrap using the following command:
 
 ##  License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is protected under the MIT License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
 
 ##  Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+- Used some parts of [ROBLOX-desktop-launcher by pizzaboxer](https://github.com/pizzaboxer/ROBLOX-desktop-launcher)
+- Thanks for explaining this pizzaboxer. [A deep dive on how the Roblox bootstrapper works](https://github.com/bloxstraplabs/bloxstrap/wiki/A-deep-dive-on-how-the-Roblox-bootstrapper-works)
 
 ---
