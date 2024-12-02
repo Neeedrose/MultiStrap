@@ -56,7 +56,7 @@ Install MultiStrap using one of the following methods:
 
 1. Clone the MultiStrap repository:
 ```sh
-❯ git clone ../MultiStrap
+❯ git clone https://github.com/Neeedrose/MultiStrap.git
 ```
 
 2. Navigate to the project directory:
