@@ -10,6 +10,9 @@ import requests
 import psutil
 import json
 import logging
+import win32api
+import win32process
+import win32con
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
@@ -94,15 +97,18 @@ def startGame(placeID, gameID, security_cookie):
         print(f"Error: {str(e)}")
 
 def stop_all_roblox_processes():
-    print("Stopping all ROBLOX processes...")
-    for process in psutil.process_iter(['name']):
-        if process.info['name'] and 'roblox' in process.info['name'].lower():
-            try:
-                process.terminate()
-                process.wait(timeout=5)
-                print(f"Terminated: {process.info['name']} (PID: {process.pid})")
-            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.TimeoutExpired):
-                print(f"Failed to terminate: {process.info['name']} (PID: {process.pid})")
+    print("Stopping all ROBLOX processes using win32...")
+    for proc in psutil.process_iter(['pid', 'name']):
+        try:
+            if proc.info['name'] and 'roblox' in proc.info['name'].lower():
+                pid = proc.info['pid']
+                print(f"Attempting to terminate: {proc.info['name']} (PID: {pid})")
+                handle = win32api.OpenProcess(win32con.PROCESS_TERMINATE, 0, pid)
+                win32api.TerminateProcess(handle, 0)
+                win32api.CloseHandle(handle)
+                print(f"Successfully terminated: {proc.info['name']} (PID: {pid})")
+        except Exception as e:
+            print(f"Failed to terminate process (PID: {proc.info['pid']}): {e}")
     print("All ROBLOX processes stopped.")
 
 def save_cookies():
@@ -196,12 +202,16 @@ def run_app():
             return
 
         print("Stopping message loop...")
+        # Stop the message loop safely
         message_loop_running = False
-        if message_loop_thread:
-            message_loop_thread.join()
 
-        stop_all_roblox_processes()
+        # Wait for the message loop thread to exit
+        if message_loop_thread and message_loop_thread.is_alive():
+            message_loop_thread.join(timeout=5)
+            print("Message loop thread has stopped.")
 
+        # Stop Roblox processes in a separate thread to avoid GUI blocking
+        threading.Thread(target=stop_all_roblox_processes, daemon=True).start()
         print("Process stopped.")
 
     def login():
